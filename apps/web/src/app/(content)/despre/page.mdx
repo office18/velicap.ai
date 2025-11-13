@@ -1,6 +1,3 @@
-import { getTotal } from "@sicap/api";
-import { formatNumber } from "@/utils";
-
 export const metadata = {
   title: 'Despre',
   description: "Despre SICAP.ai"
@@ -9,10 +6,9 @@ export const metadata = {
 export const revalidate = 0
 export const dynamic = 'force-dynamic'
 
-export const totals = await getTotal();
-export const licitatii = formatNumber(totals.licitatii);
-export const achizitii = formatNumber(totals.achizitii);
-export const offline = formatNumber(totals.offline);
+export const licitatii = "0";
+export const achizitii = "0";
+export const offline = "0";
 
 # Despre
 
